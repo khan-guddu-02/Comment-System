@@ -55,7 +55,7 @@ function App() {
         </select>
       </div>
 
-      {sortedComments.map(c => (
+      {sortedComments.map(c => (  
         <Comment key={c.id} comment={c} refreshComments={fetchComments} />
       ))}
     </div>
